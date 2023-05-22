@@ -1,5 +1,5 @@
-# rest client configuration
 quarkus:
+  # rest client configuration
   rest-client:
     "org.br.mineradora.client.CurrencyPriceClient"
   url:
@@ -14,3 +14,15 @@ quarkus:
   hibernate-orm:
     database:
       generation: update
+
+# kafka configs
+mp:
+  messaging:
+    outgoing:
+      quotation-channel:
+        connector: smallrye-kafka
+        topic: quotation
+    connector:
+      smallrye-kafka:
+        bootstrap:
+          servers: localhost:9092
