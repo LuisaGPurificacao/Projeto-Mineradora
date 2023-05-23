@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Date;
 
 @Entity
 @Table(name = "proposal")
@@ -22,5 +23,6 @@ public class ProposalEntity {
     private String country;
     @Column(name = "proposal_validity_days")
     private Integer proposalValidityDays;
+    private Date created;
 
 }
