@@ -6,5 +6,5 @@ import org.br.mineradora.entity.QuotationEntity;
 import javax.enterprise.context.ApplicationScoped;
 
 @ApplicationScoped
-public interface QuotationRepository extends PanacheRepository<QuotationEntity> {
+public class QuotationRepository implements PanacheRepository<QuotationEntity> {
 }

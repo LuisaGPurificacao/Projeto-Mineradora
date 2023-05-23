@@ -5,15 +5,15 @@ quarkus:
   url:
     https://economia.awesomeapi.com.br
   # database configuration
-  datasource:
-    db-kind: postgresql
-    username: postgres
-    password: 1234
-    jdbc:
-      url: jdbc:postgresql://localhost:5432/quotationdb
-  hibernate-orm:
-    database:
-      generation: update
+#  datasource:
+#    db-kind: postgresql
+#    username: postgres
+#    password: 1234
+#    jdbc:
+#      url: jdbc:postgresql://localhost:5432/quotationdb
+#  hibernate-orm:
+#    database:
+#      generation: update
 
 # kafka configs
 mp:

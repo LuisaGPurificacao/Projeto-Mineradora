@@ -9,7 +9,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
 @Path("/last")
-@RegisterRestClient
+@RegisterRestClient(baseUri = "https://economia.awesomeapi.com.br")
 @ApplicationScoped
 public interface CurrencyPriceClient {
 
