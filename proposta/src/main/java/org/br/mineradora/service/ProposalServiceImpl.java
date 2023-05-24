@@ -6,10 +6,12 @@ import org.br.mineradora.entity.ProposalEntity;
 import org.br.mineradora.message.KafkaEvent;
 import org.br.mineradora.repository.ProposalRepository;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import java.util.Date;
 
+@ApplicationScoped
 public class ProposalServiceImpl implements ProposalService {
 
     @Inject
