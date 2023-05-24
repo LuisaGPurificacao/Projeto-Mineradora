@@ -9,6 +9,7 @@ import org.br.mineradora.repository.OpportunityRepository;
 import org.br.mineradora.repository.QuotationRepository;
 import org.br.mineradora.utils.CSVHelper;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
+@ApplicationScoped
 public class OpportunityServiceImpl implements OpportunityService {
 
     @Inject
