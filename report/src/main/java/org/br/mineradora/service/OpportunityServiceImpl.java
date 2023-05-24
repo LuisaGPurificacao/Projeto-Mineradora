@@ -11,6 +11,7 @@ import org.br.mineradora.utils.CSVHelper;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 import java.io.ByteArrayInputStream;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,6 +43,7 @@ public class OpportunityServiceImpl implements OpportunityService {
     }
 
     @Override
+    @Transactional
     public void saveQuotation(QuotationDTO quotation) {
         QuotationEntity createQuotation = new QuotationEntity();
         createQuotation.setDate(new Date());
